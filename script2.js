@@ -24,12 +24,12 @@ function initMap() {
       marker.setPosition(position);
     //   map.setCenter(position);
     });
-  }, 5000);
+  });
 }
 
 function loadScript() {
   const script = document.createElement('script');
-  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBA20kALnAyOpKf40a1O4G-seEH0hQvlBw';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4eUP4NTeLcy8A4YOkmP5z7IIbMDGX4N8';
   script.defer = true;
   script.addEventListener('load', initMap);
   document.head.appendChild(script);
