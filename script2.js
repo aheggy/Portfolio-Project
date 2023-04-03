@@ -2,7 +2,7 @@
 function initMap() {
   let map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 0, lng: 0 },
-    zoom: 2.5,
+    zoom: 2,
   });
   
   const marker = new google.maps.Marker({
@@ -14,12 +14,14 @@ function initMap() {
     }
     });
 
-  
+  //https://api.wheretheiss.at/v1/satellites/25544
+  //("http://api.open-notify.org/iss-now.json"
   setInterval(() => {
-    fetch("https://api.open-notify.org/iss-now.json")
+    fetch("https://api.wheretheiss.at/v1/satellites/25544")
     .then((response) => response.json())
     .then((json) => {
-      const { latitude, longitude } = json.iss_position;
+      const { latitude, longitude } = json
+      console.log(latitude, longitude)
       const position = { lat: parseFloat(latitude), lng: parseFloat(longitude) };
       marker.setPosition(position);
     //   map.setCenter(position);
