@@ -34,7 +34,9 @@ a {
     text-decoration: none;
   }
 p{
-    text-align: center;
+    padding: 15px;
+    font-size: large;
+    text-align: left;
     width: 50%;
     align-items: center;
 }
