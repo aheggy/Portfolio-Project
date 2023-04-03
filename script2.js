@@ -14,15 +14,6 @@ function initMap() {
     }
     });
 
-    // const circle = new google.maps.Circle({
-    //     map,
-    //     radius: 1000000, // 1000 km in meters
-    //     strokeColor: "#FF0000",
-    //     strokeOpacity: 0.8,
-    //     strokeWeight: 2,
-    //     fillColor: "#FF0000",
-    //     fillOpacity: 0.35
-    //   });
   
   setInterval(() => {
     fetch("http://api.open-notify.org/iss-now.json")
@@ -31,10 +22,9 @@ function initMap() {
       const { latitude, longitude } = json.iss_position;
       const position = { lat: parseFloat(latitude), lng: parseFloat(longitude) };
       marker.setPosition(position);
-    //   circle.setCenter(position)
     //   map.setCenter(position);
     });
-  }, 500000);
+  }, 5000);
 }
 
 function loadScript() {
