@@ -16,7 +16,7 @@ function initMap() {
 
   
   setInterval(() => {
-    fetch("http://api.open-notify.org/iss-now.json")
+    fetch("https://api.open-notify.org/iss-now.json")
     .then((response) => response.json())
     .then((json) => {
       const { latitude, longitude } = json.iss_position;
