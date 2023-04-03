@@ -5,7 +5,7 @@ button.addEventListener("click", event =>{
   // event.preventDefault()
   document.querySelector(".open-page").remove()
   // localStorage.setItem('divRemoved', 'true')
-  document.location.href = `index2.html`
+  document.location.href = `location.html`
   
   // if (localStorage.getItem('divRemoved') === 'true') {
   //   document.querySelector('.open-page').remove()
