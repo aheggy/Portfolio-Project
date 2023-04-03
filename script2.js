@@ -24,7 +24,7 @@ function initMap() {
       marker.setPosition(position);
     //   map.setCenter(position);
     });
-  });
+  }, 5000);
 }
 
 function loadScript() {
