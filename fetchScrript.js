@@ -28,7 +28,7 @@ function initMap() {
       marker.setPosition(position);
     //   map.setCenter(position);
     });
-  }, 5000);
+  }, 3000);
 }
 
 //Add script tag with the google maps API to html
