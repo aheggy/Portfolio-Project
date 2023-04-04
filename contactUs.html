@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script defer src="contactScript.js"></script>
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="nav-home"><a href="index.html">Home</a></li>
+            <li class="nav-location"><a href="location.html">Location</a></li>
+            <li class="nav-contact-us"><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+    <p>This website allows you to track the live location of the International Space Station (ISS) through the use of Google Maps API. Additionally, it provides information about the ISS such as its altitude, velocity, and number of orbits around the Earth.</p>
+    </section>
+    <section class="info-parts">
+        <h2>Contact Us</h2>
+        <form id="contact-form" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="response"></div>
+    </section>
+</body>
+</html>

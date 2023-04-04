@@ -46,3 +46,4 @@ images.forEach((image) => {
   });
 });
 
+// this section is for CONTACT US page
